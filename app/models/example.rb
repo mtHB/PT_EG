@@ -1,0 +1,4 @@
+class Example < ApplicationRecord
+    
+end
+  
