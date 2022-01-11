@@ -4,5 +4,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   
-  resources :examples
+  get "/calendar/:user_id", to: 'calendar#user_calendar'
+  post "/calendar/:user_id/available", to: 'calendar#user_available'
+
+  resources :calendar_entries
 end
